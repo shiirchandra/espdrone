@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "magnetometer")(type "KiCad")(uri "${KICAD_MAGNETOMETER}/KiCADv6/2024-10-07_19-20-57.kicad_sym")(options "")(descr ""))
+)

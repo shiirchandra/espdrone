@@ -1,0 +1,453 @@
+** Drc report for ESP32 drone.kicad_pcb **
+** Created on 2024-10-17T20:14:23+0530 **
+
+** Found 132 DRC violations **
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(130.0355 mm, 92.5214 mm): Track [+3V3] on B.Cu, length 1.7641 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(119.7470 mm, 68.3252 mm): Track [LDO_EN] on F.Cu, length 0.9222 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(124.8273 mm, 97.7700 mm): Track [SDA3] on B.Cu, length 0.1927 mm
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(134.0000 mm, 103.0000 mm): Via [+3V3] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.0258 mm)
+    Rule: netclass 'Default'; error
+    @(146.2468 mm, 95.6043 mm): Track [/MOT_4] on F.Cu, length 1.2484 mm
+    @(146.8577 mm, 93.8591 mm): Pad 2 [GND] of T4 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.0258 mm)
+    Rule: netclass 'Default'; error
+    @(147.1296 mm, 94.7216 mm): Track [/MOT_4] on F.Cu, length 0.6531 mm
+    @(146.8577 mm, 93.8591 mm): Pad 2 [GND] of T4 on F.Cu
+[shorting_items]: Items shorting two nets (nets VBUS and LDO_EN)
+    Local override; error
+    @(120.5682 mm, 69.3661 mm): Track [VBUS] on F.Cu, length 0.0018 mm
+    @(121.1491 mm, 68.8981 mm): Pad 2 [LDO_EN] of SW1 on F.Cu
+[shorting_items]: Items shorting two nets (nets VBUS and LDO_EN)
+    Local override; error
+    @(123.8059 mm, 69.3661 mm): Track [VBUS] on F.Cu, length 3.2377 mm
+    @(121.1491 mm, 68.8981 mm): Pad 2 [LDO_EN] of SW1 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.1270 mm; actual 0.0818 mm)
+    Rule: netclass 'Default'; error
+    @(116.1542 mm, 70.8990 mm): Track [+BATT] on F.Cu, length 1.8104 mm
+    @(118.6491 mm, 68.8981 mm): Pad 3 [/LDO_H] of SW1 on F.Cu
+[shorting_items]: Items shorting two nets (nets VBUS and GND)
+    Local override; error
+    @(124.5088 mm, 68.6633 mm): Track [VBUS] on F.Cu, length 0.9940 mm
+    @(123.6491 mm, 68.8981 mm): Pad 1 [GND] of SW1 on F.Cu
+[shorting_items]: Items shorting two nets (nets VBUS and LDO_EN)
+    Local override; error
+    @(120.5670 mm, 69.3649 mm): Track [VBUS] on F.Cu, length 2.0949 mm
+    @(121.1491 mm, 68.8981 mm): Pad 2 [LDO_EN] of SW1 on F.Cu
+[shorting_items]: Items shorting two nets (nets VBUS and GND)
+    Local override; error
+    @(138.4567 mm, 68.6633 mm): Track [VBUS] on F.Cu, length 13.9479 mm
+    @(123.6491 mm, 68.8981 mm): Pad 1 [GND] of SW1 on F.Cu
+[shorting_items]: Items shorting two nets (nets LDO_EN and VBUS)
+    Local override; error
+    @(121.1491 mm, 68.8981 mm): Pad 2 [LDO_EN] of SW1 on F.Cu
+    @(120.5670 mm, 69.3649 mm): Pad 1 [VBUS] of R2 on F.Cu
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(121.1491 mm, 66.1481 mm): Footprint SW1
+    @(112.6973 mm, 68.5025 mm): Footprint J5
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(121.1491 mm, 66.1481 mm): Footprint SW1
+    @(119.7420 mm, 69.3649 mm): Footprint R2
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(131.0000 mm, 85.6750 mm): Footprint R24
+    @(128.0000 mm, 86.0000 mm): Footprint U10
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(128.0000 mm, 86.0000 mm): Footprint U10
+    @(125.0000 mm, 83.7750 mm): Footprint C19
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(127.0000 mm, 82.0000 mm): Reference 'C20'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(132.0000 mm, 98.0000 mm): Reference 'C25'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(132.0000 mm, 85.6750 mm): Reference 'R24'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(130.0000 mm, 83.5000 mm): Reference 'U10'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(123.5000 mm, 83.5000 mm): Reference 'C19'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(131.5000 mm, 91.5000 mm): Reference 'C24'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(124.0000 mm, 93.3250 mm): Reference 'R25'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(134.5000 mm, 95.0000 mm): Reference 'U12'
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(137.1750 mm, 103.9500 mm): Track [Net-(U11-C1)] on B.Cu, length 0.4125 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(136.6342 mm, 104.4908 mm): Track [Net-(U11-C1)] on B.Cu, length 0.7648 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.7158 mm, 104.4908 mm): Track [Net-(U11-C1)] on B.Cu, length 3.9184 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.0000 mm, 103.7750 mm): Track [Net-(U11-C1)] on B.Cu, length 1.0123 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(142.0500 mm, 104.5500 mm): Track [Net-(U11-SETP)] on B.Cu, length 0.9500 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(140.5000 mm, 103.0000 mm): Track [Net-(U11-SETP)] on B.Cu, length 2.1920 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(138.4625 mm, 102.7500 mm): Track [Net-(U11-SETP)] on B.Cu, length 0.3536 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(138.7125 mm, 103.0000 mm): Track [Net-(U11-SETP)] on B.Cu, length 1.7875 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(139.0000 mm, 104.0000 mm): Track [Net-(U11-SETC)] on B.Cu, length 2.1213 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(138.9011 mm, 104.0000 mm): Track [Net-(U11-SETC)] on B.Cu, length 0.0989 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(138.4011 mm, 103.5000 mm): Track [Net-(U11-SETC)] on B.Cu, length 0.7071 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(138.3636 mm, 103.5375 mm): Track [Net-(U11-SETC)] on F.Cu, length 0.0530 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(135.3787 mm, 103.5375 mm): Track [Net-(U11-SETC)] on F.Cu, length 2.9849 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(135.0375 mm, 103.5375 mm): Track [Net-(U11-SETC)] on B.Cu, length 0.3412 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(135.0375 mm, 103.5375 mm): Track [Net-(U11-SETC)] on B.Cu, length 0.0530 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(136.1750 mm, 103.5375 mm): Track [Net-(U11-SETC)] on B.Cu, length 1.1375 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(129.5000 mm, 98.0000 mm): Track [SDA3] on B.Cu, length 4.0268 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(128.6100 mm, 98.8900 mm): Track [SDA3] on B.Cu, length 1.2587 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(125.9473 mm, 98.8900 mm): Track [SDA3] on B.Cu, length 2.6627 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(124.8273 mm, 97.7700 mm): Track [SDA3] on B.Cu, length 1.5839 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(134.5000 mm, 99.0000 mm): Track [SDA3] on B.Cu, length 1.2125 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(134.5000 mm, 98.5000 mm): Track [SDA3] on B.Cu, length 0.5000 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(134.5000 mm, 100.2125 mm): Track [SDA3] on B.Cu, length 1.4672 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(134.1333 mm, 98.1333 mm): Track [SDA3] on B.Cu, length 0.5186 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.6601 mm, 98.1333 mm): Track [SDA3] on B.Cu, length 0.4732 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.5268 mm, 98.0000 mm): Track [SDA3] on B.Cu, length 0.1885 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(135.2071 mm, 99.4946 mm): Track [SCL3] on B.Cu, length 1.4749 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(135.2071 mm, 94.7071 mm): Track [SCL3] on B.Cu, length 4.7875 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(131.6770 mm, 93.2230 mm): Track [SCL3] on B.Cu, length 2.0460 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(131.3500 mm, 93.5500 mm): Track [SCL3] on B.Cu, length 0.4624 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(131.3500 mm, 94.0000 mm): Track [SCL3] on B.Cu, length 0.4500 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.7230 mm, 93.2230 mm): Track [SCL3] on B.Cu, length 2.0989 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.0572 mm, 94.7692 mm): Track [+3V3] on B.Cu, length 0.4418 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.4132 mm, 94.2368 mm): Track [+3V3] on B.Cu, length 0.3349 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.4132 mm, 94.4132 mm): Track [+3V3] on B.Cu, length 0.1764 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.0572 mm, 94.7692 mm): Track [+3V3] on B.Cu, length 0.5034 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(131.3500 mm, 95.6000 mm): Track [+3V3] on B.Cu, length 0.1500 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(129.0000 mm, 86.2000 mm): Track [+3V3] on B.Cu, length 0.8485 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(129.0000 mm, 86.0000 mm): Track [+3V3] on B.Cu, length 0.2000 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(129.0000 mm, 85.7866 mm): Track [+3V3] on B.Cu, length 0.2134 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(129.4616 mm, 85.3250 mm): Track [+3V3] on B.Cu, length 0.6528 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(129.7400 mm, 85.3250 mm): Track [+3V3] on B.Cu, length 0.2784 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.3401 mm, 94.7616 mm): Track [GND] on B.Cu, length 0.3372 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.9515 mm, 94.7616 mm): Track [GND] on B.Cu, length 0.3886 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.5785 mm, 95.0000 mm): Track [GND] on B.Cu, length 0.7215 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.5785 mm, 94.2785 mm): Track [GND] on B.Cu, length 0.3939 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(131.7020 mm, 97.7020 mm): Track [GND] on B.Cu, length 0.9928 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.2980 mm, 97.7020 mm): Track [GND] on B.Cu, length 1.5960 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.7020 mm, 97.2980 mm): Track [GND] on B.Cu, length 0.5713 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.7020 mm, 95.1235 mm): Track [GND] on B.Cu, length 2.1745 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.5785 mm, 95.0000 mm): Track [GND] on B.Cu, length 0.1746 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.1625 mm, 96.6125 mm): Track [+3V3] on B.Cu, length 0.7750 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.5500 mm, 97.0000 mm): Track [+3V3] on B.Cu, length 0.5480 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(126.4574 mm, 93.1270 mm): Track [SCL3] on B.Cu, length 1.6128 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(125.5426 mm, 93.1270 mm): Track [SCL3] on B.Cu, length 0.9148 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(125.2547 mm, 93.4149 mm): Track [SCL3] on B.Cu, length 0.4071 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(127.5978 mm, 91.9866 mm): Track [SCL3] on B.Cu, length 0.8888 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(125.2547 mm, 97.2525 mm): Track [SCL3] on B.Cu, length 3.8377 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(126.5346 mm, 98.5324 mm): Track [SCL3] on B.Cu, length 1.8100 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(128.1791 mm, 98.5324 mm): Track [SCL3] on B.Cu, length 1.6446 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(130.3875 mm, 96.3240 mm): Track [SCL3] on B.Cu, length 3.1231 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(130.3875 mm, 94.9625 mm): Track [SCL3] on B.Cu, length 1.3615 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(131.3500 mm, 94.0000 mm): Track [SCL3] on B.Cu, length 1.3612 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.4250 mm, 93.5000 mm): Track [SDA3] on B.Cu, length 0.6010 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.0000 mm, 93.9250 mm): Track [SDA3] on B.Cu, length 0.0750 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.5790 mm, 93.5000 mm): Track [SDA3] on B.Cu, length 1.1540 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(134.0000 mm, 93.9210 mm): Track [SDA3] on B.Cu, length 0.5954 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(134.0000 mm, 97.5268 mm): Track [SDA3] on B.Cu, length 3.6058 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.5268 mm, 98.0000 mm): Track [SDA3] on B.Cu, length 0.6691 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(130.0355 mm, 92.5214 mm): Track [+3V3] on B.Cu, length 1.7641 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.1625 mm, 95.8375 mm): Track [+3V3] on B.Cu, length 0.2680 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.0000 mm, 95.6750 mm): Track [+3V3] on B.Cu, length 0.2298 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.3000 mm, 95.6750 mm): Track [+3V3] on B.Cu, length 0.0750 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.3520 mm, 96.0270 mm): Track [+3V3] on B.Cu, length 0.5960 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.9480 mm, 96.0270 mm): Track [+3V3] on B.Cu, length 0.4978 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.0000 mm, 95.6000 mm): Track [+3V3] on B.Cu, length 0.0750 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.0000 mm, 95.6000 mm): Track [+3V3] on B.Cu, length 0.1000 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(130.0355 mm, 90.8145 mm): Track [+3V3] on B.Cu, length 6.1088 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(134.3551 mm, 86.4949 mm): Track [+3V3] on B.Cu, length 0.6399 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(134.3551 mm, 85.8551 mm): Track [+3V3] on B.Cu, length 1.4214 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(130.0355 mm, 92.5214 mm): Track [+3V3] on B.Cu, length 1.7069 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.3500 mm, 84.8500 mm): Track [+3V3] on B.Cu, length 2.3500 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.8979 mm, 91.4766 mm): Track [XSHUT] on B.Cu, length 2.4495 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(133.1291 mm, 84.1746 mm): Track [XSHUT] on B.Cu, length 5.8292 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(134.6300 mm, 85.6755 mm): Track [XSHUT] on B.Cu, length 2.1226 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(134.6300 mm, 89.7445 mm): Track [XSHUT] on B.Cu, length 4.0690 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(127.2999 mm, 84.1746 mm): Track [XSHUT] on B.Cu, length 1.4170 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(132.7550 mm, 83.2750 mm): Track [GND] on B.Cu, length 3.3729 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(128.0500 mm, 83.2750 mm): Track [GND] on B.Cu, length 4.7050 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(124.8273 mm, 92.8127 mm): Track [SDA3] on B.Cu, length 4.9573 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(125.1400 mm, 92.5000 mm): Track [SDA3] on B.Cu, length 0.4422 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(126.0000 mm, 92.5000 mm): Track [SDA3] on B.Cu, length 0.8600 mm
+[track_width]: Track width (netclass 'Default' min width 0.2000 mm; actual 0.1000 mm)
+    Rule: netclass 'Default'; error
+    @(124.8273 mm, 97.7700 mm): Track [SDA3] on B.Cu, length 0.1927 mm
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(137.0000 mm, 102.0000 mm): Track [<no net>] on B.Cu, length 0.5000 mm
+    @(136.9250 mm, 102.0750 mm): Pad 17 [<no net>] of U11 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(120.5682 mm, 69.3661 mm): Track [VBUS] on F.Cu, length 0.0018 mm
+    @(121.1491 mm, 68.8981 mm): Pad 2 [LDO_EN] of SW1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(123.8059 mm, 69.3661 mm): Track [VBUS] on F.Cu, length 3.2377 mm
+    @(121.1491 mm, 68.8981 mm): Pad 2 [LDO_EN] of SW1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(123.8059 mm, 69.3661 mm): Track [VBUS] on F.Cu, length 3.2377 mm
+    @(123.6491 mm, 68.8981 mm): Pad 1 [GND] of SW1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(124.5088 mm, 68.6633 mm): Track [VBUS] on F.Cu, length 0.9940 mm
+    @(123.6491 mm, 68.8981 mm): Pad 1 [GND] of SW1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(120.5670 mm, 69.3649 mm): Track [VBUS] on F.Cu, length 2.0949 mm
+    @(121.1491 mm, 68.8981 mm): Pad 2 [LDO_EN] of SW1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(138.4567 mm, 68.6633 mm): Track [VBUS] on F.Cu, length 13.9479 mm
+    @(123.6491 mm, 68.8981 mm): Pad 1 [GND] of SW1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(121.1491 mm, 68.8981 mm): Pad 2 [LDO_EN] of SW1 on F.Cu
+    @(120.5670 mm, 69.3649 mm): Pad 1 [VBUS] of R2 on F.Cu
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(149.1111 mm, 73.4440 mm): Segment on F.Silkscreen
+    @(148.7694 mm, 75.2246 mm): Reference 'T3'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(130.4775 mm, 85.9123 mm): Segment on B.Silkscreen
+    @(130.5500 mm, 87.3500 mm): Segment on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(140.7750 mm, 100.4300 mm): Reference 'C23'
+    @(140.6344 mm, 99.9900 mm): Segment on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(140.7750 mm, 100.4300 mm): Reference 'C23'
+    @(140.6344 mm, 101.0100 mm): Segment on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(140.9156 mm, 99.5100 mm): Segment on B.Silkscreen
+    @(140.7750 mm, 99.0700 mm): Reference 'C26'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(140.9156 mm, 98.4900 mm): Segment on B.Silkscreen
+    @(140.7750 mm, 99.0700 mm): Reference 'C26'
+
+** Found 5 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(128.8000 mm, 85.2000 mm): Pad 2 [GND] of U10 on B.Cu
+    @(129.0109 mm, 85.1854 mm): Pad 18 [GND] of U9 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(129.0109 mm, 85.1854 mm): Pad 18 [GND] of U9 on F.Cu
+    @(129.6000 mm, 86.0000 mm): Pad 12 [GND] of U10 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(126.5000 mm, 83.2750 mm): Track [+3V3] on B.Cu, length 0.2250 mm
+    @(128.9609 mm, 82.6854 mm): Track [+3V3] on F.Cu, length 2.4062 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(135.4625 mm, 102.8250 mm): Pad 13 [+3V3] of U11 on B.Cu
+    @(134.7267 mm, 99.5000 mm): Track [+3V3] on F.Cu, length 3.0000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(121.1491 mm, 68.8981 mm): Pad 2 [LDO_EN] of SW1 on F.Cu
+    @(119.7470 mm, 68.3252 mm): Track [LDO_EN] on F.Cu, length 0.9222 mm
+
+** Found 0 Footprint errors **
+
+** End of Report **
